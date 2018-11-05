@@ -1,15 +1,29 @@
+body {
+    background-color: #FFF;
+}
+
 .grid > * {
-    /* background-color: lightgrey; */
+    background-color: #FFF;
     padding: 5px;
     border: 1px solid rgb(54, 54, 54);
     padding: 10px;
     box-shadow: 5px 8px 4px rgb(58, 58, 58);
 }
 
+#header {
+    text-align: center;
+    align-items: center;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column
 }
 
 #sidebar {
@@ -62,6 +76,11 @@
     #content {
         grid-column: 2 / -1;
         grid-row: 2 / 3;
+    }
+
+    .content-block {
+        display: flex;
+        flex-direction: column;
     }
 
     #sidebar {
